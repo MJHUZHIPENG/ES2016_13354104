@@ -11,10 +11,13 @@
 
 **2.安装一些必要的环境(ubuntu为例)：**
 
-**$ sudo apt-get update**
-**$ sudo apt-get install ant**
-**$ sudo apt-get install openjdk-7-jdk**
-**$ sudo apt-get install unzip**
+**$ sudo apt-get update
+
+$ sudo apt-get install ant
+
+$ sudo apt-get install openjdk-7-jdk
+
+$ sudo apt-get install unzip**
 
 
 ## 二、配置步骤
@@ -49,8 +52,8 @@ $ ls**
 * 进入刚刚dol的文件夹: **$ cd ../dol**
 * 修改*build_zip.xml*文件:
 找到下面这段话，就是说上面编译的*systemc*位置在哪里，把YYY改成上页pwd的结果（注意，对于64位 系统的机器，lib-linux要改成lib-linux64）
->property name="systemc.inc" value="YYY/include"
->property name="systemc.lib" value="YYY/lib-linux/libsystemc.a" 
+> property name="systemc.inc" value="YYY/include"
+> property name="systemc.lib" value="YYY/lib-linux/libsystemc.a" 
 
 
 * 然后是编译: **$ ant -f build_zip.xml all**
