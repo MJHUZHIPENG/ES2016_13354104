@@ -14,14 +14,22 @@
 ** sudo apt-get update **
 2. 以推荐配置安装：
 ** sudo apt-get install ros-jade-desktop-full **
+
 ## 五、初始化rosdep
+
 输入以下命令行初始化rosdep:
 ** sudo rosdep init
 rosdep update **
+
 ## 六、环境配置
+
 ** echo "source /opt/ros/jade/setup.bash" >> ~/.bashrc
 source ~/.bashrc **
+
 ## 七、获取rosinstall
+
 ** sudo apt-get install python-rosinstall **
+
 ## 八、测试安装成功
+
 ** $ apt-get source ros-jade-laser-pipeline **
